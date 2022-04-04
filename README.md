@@ -86,3 +86,15 @@ function getSomeValue() public pure returns (uint256 value) {
 `lt.getSomeValue()` 로 해당 결과를 얻을 수 있음.
 
 ![call_getSomeValue()](https://user-images.githubusercontent.com/46777310/161541573-bb3e2a19-edfd-4840-b5d0-ef48322f9123.png)
+
+> ### 테스트 진행
+
+![testJS](https://user-images.githubusercontent.com/46777310/161549804-1f9825b4-61a7-447f-8af4-676a0efbd3fb.png)
+
+위 화면과 같이 test폴더에서 진행이 가능하며 `beforeEach` 함수로 사전에 필요한 함수를 비동기 처리로 불러온 후
+
+it 으로 jest와 같이 처리하여 asssert함수의 다양한 메서드를 이용한 테스트가 가능하다.
+
+호출은 `truffle test (경로)` 로 할 수 있으며 실행 결과는 위와 같이 콘솔로 표시됨
+
+![callTest](https://user-images.githubusercontent.com/46777310/161550242-b283de6b-2321-45ef-b63a-cfb67670aecc.png)
