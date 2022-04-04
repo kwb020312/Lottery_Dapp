@@ -63,3 +63,26 @@ truffle-migrate
 
 실행시 위와같은 네트워크의 정보와 Migration결과를 담은 로그를 출력해줌
 
+> ### 함수 호출방법
+
+```js
+function getSomeValue() public pure returns (uint256 value) {
+    return 5;
+}
+```
+
+위와 같은 구조로 호출했다면
+
+`ganache-cli -d -m (msg)` 로 서버를 가동시키고
+
+`truffle migrate --reset` 로 sol파일을 migration한다.
+
+후
+
+`truffle console` 로 접근해 제어권한을 얻으면
+
+`{Sol파일 명}.deployed().then(instance => {lt = instance})`
+
+`lt.getSomeValue()` 로 해당 결과를 얻을 수 있음.
+
+![call_getSomeValue()](https://user-images.githubusercontent.com/46777310/161541573-bb3e2a19-edfd-4840-b5d0-ef48322f9123.png)

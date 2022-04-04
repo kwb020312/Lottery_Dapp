@@ -1,21 +1,58 @@
 {
   "contractName": "Lottery",
-  "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/self/Lottery_Dapp/contracts/Lottery.sol\":\"Lottery\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/self/Lottery_Dapp/contracts/Lottery.sol\":{\"keccak256\":\"0x75e6eea63a9303b9781d9ae15c5a02d6db6acee2fe89a0cf6f58b63894297158\",\"urls\":[\"bzz-raw://18df5ced57f85736b56c899552d223e20bbe21b433bdc42a0bb60cb53361ae7b\",\"dweb:/ipfs/QmTeUcRm6o8vVVoeyE6H5E6LiCAbuJrm1oGCmrZL5ALpKy\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820f39bf94dda32c7c6d3a3d615dbb6955f8b84b37dbf50367c28a93a9c3707b8fc64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820f39bf94dda32c7c6d3a3d615dbb6955f8b84b37dbf50367c28a93a9c3707b8fc64736f6c63430005100032",
-  "sourceMap": "69:23:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:23:0;;;;;;;",
-  "deployedSourceMap": "69:23:0:-;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract Lottery {\r\n\r\n}",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getSomeValue",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"getSomeValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/self/Lottery_Dapp/contracts/Lottery.sol\":\"Lottery\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/self/Lottery_Dapp/contracts/Lottery.sol\":{\"keccak256\":\"0xb643f4e31a2f308690369a741ea8ec135b923e800532183e1549faa41f3f836b\",\"urls\":[\"bzz-raw://5a4b3f94020c43f11335ba149c6fbb5de043f224b6ddc075ee291118ab32f04b\",\"dweb:/ipfs/QmPBjdvkMxbQZD3Pw2wk38oQqUvftBcf7B6ZNX2hgFPnEW\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060fe8061005f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063a40674b714607f575b600080fd5b603d609b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b608560c0565b6040518082815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600590509056fea265627a7a72315820b5e91cd8250f8833950a1a7bd93112a4e2aab8667435ac953b5a3680c18a6cd364736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80638da5cb5b146037578063a40674b714607f575b600080fd5b603d609b565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b608560c0565b6040518082815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600590509056fea265627a7a72315820b5e91cd8250f8833950a1a7bd93112a4e2aab8667435ac953b5a3680c18a6cd364736f6c63430005100032",
+  "sourceMap": "69:209:0:-;;;122:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;122:58:0;162:10;154:5;;:18;;;;;;;;;;;;;;;;;;69:209;;;;;;",
+  "deployedSourceMap": "69:209:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:209:0;;;;;;;;;;;;;;;;;;;;;;;;93:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;188:87;;;:::i;:::-;;;;;;;;;;;;;;;;;;;93:20;;;;;;;;;;;;;:::o;188:87::-;233:13;266:1;259:8;;188:87;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.9.0;\r\n\r\ncontract Lottery {\r\n    address public owner;\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    function getSomeValue() public pure returns (uint256 value) {\r\n        return 5;\r\n    }\r\n}",
   "sourcePath": "D:/self/Lottery_Dapp/contracts/Lottery.sol",
   "ast": {
     "absolutePath": "/D/self/Lottery_Dapp/contracts/Lottery.sol",
     "exportedSymbols": {
       "Lottery": [
-        2
+        21
       ]
     },
-    "id": 3,
+    "id": 22,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -38,25 +75,232 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2,
+        "id": 21,
         "linearizedBaseContracts": [
-          2
+          21
         ],
         "name": "Lottery",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 3,
-        "src": "69:23:0"
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 21,
+            "src": "93:20:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "93:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11,
+              "nodeType": "Block",
+              "src": "143:37:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "154:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 36,
+                        "src": "162:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 8,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "162:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "154:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10,
+                  "nodeType": "ExpressionStatement",
+                  "src": "154:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "133:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "143:0:0"
+            },
+            "scope": 21,
+            "src": "122:58:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 19,
+              "nodeType": "Block",
+              "src": "248:27:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "35",
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "266:1:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_5_by_1",
+                      "typeString": "int_const 5"
+                    },
+                    "value": "5"
+                  },
+                  "functionReturnParameters": 16,
+                  "id": 18,
+                  "nodeType": "Return",
+                  "src": "259:8:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 20,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSomeValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "209:2:0"
+            },
+            "returnParameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 15,
+                  "name": "value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20,
+                  "src": "233:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 14,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "233:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "232:15:0"
+            },
+            "scope": 21,
+            "src": "188:87:0",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 22,
+        "src": "69:209:0"
       }
     ],
-    "src": "33:59:0"
+    "src": "33:245:0"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "/D/self/Lottery_Dapp/contracts/Lottery.sol",
       "exportedSymbols": {
         "Lottery": [
-          2
+          21
         ]
       }
     },
@@ -89,22 +333,265 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            2
+            21
           ],
           "name": "Lottery",
-          "nodes": [
-            null
-          ],
-          "scope": 3
+          "scope": 22
         },
-        "id": 2,
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "owner",
+              "scope": 21,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "93:7:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "93:20:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 21,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "133:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "143:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 6,
+                            "name": "Identifier",
+                            "src": "154:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 36,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 7,
+                                "name": "Identifier",
+                                "src": "162:3:0"
+                              }
+                            ],
+                            "id": 8,
+                            "name": "MemberAccess",
+                            "src": "162:10:0"
+                          }
+                        ],
+                        "id": 9,
+                        "name": "Assignment",
+                        "src": "154:18:0"
+                      }
+                    ],
+                    "id": 10,
+                    "name": "ExpressionStatement",
+                    "src": "154:18:0"
+                  }
+                ],
+                "id": 11,
+                "name": "Block",
+                "src": "143:37:0"
+              }
+            ],
+            "id": 12,
+            "name": "FunctionDefinition",
+            "src": "122:58:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getSomeValue",
+              "scope": 21,
+              "stateMutability": "pure",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 13,
+                "name": "ParameterList",
+                "src": "209:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "value",
+                      "scope": 20,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 14,
+                        "name": "ElementaryTypeName",
+                        "src": "233:7:0"
+                      }
+                    ],
+                    "id": 15,
+                    "name": "VariableDeclaration",
+                    "src": "233:13:0"
+                  }
+                ],
+                "id": 16,
+                "name": "ParameterList",
+                "src": "232:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 16
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "35",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "number",
+                          "type": "int_const 5",
+                          "value": "5"
+                        },
+                        "id": 17,
+                        "name": "Literal",
+                        "src": "266:1:0"
+                      }
+                    ],
+                    "id": 18,
+                    "name": "Return",
+                    "src": "259:8:0"
+                  }
+                ],
+                "id": 19,
+                "name": "Block",
+                "src": "248:27:0"
+              }
+            ],
+            "id": 20,
+            "name": "FunctionDefinition",
+            "src": "188:87:0"
+          }
+        ],
+        "id": 21,
         "name": "ContractDefinition",
-        "src": "69:23:0"
+        "src": "69:209:0"
       }
     ],
-    "id": 3,
+    "id": 22,
     "name": "SourceUnit",
-    "src": "33:59:0"
+    "src": "33:245:0"
   },
   "compiler": {
     "name": "solc",
@@ -116,10 +603,16 @@
       "links": {},
       "address": "0xC89C4883D9206f011cC10AeB06558845BCe8Ddfd",
       "transactionHash": "0xfb212c80b43957d9657743d2d4520abe4ec7f64c9c24768ecb699b5ac2a0e23c"
+    },
+    "1649073811714": {
+      "events": {},
+      "links": {},
+      "address": "0xC89C4883D9206f011cC10AeB06558845BCe8Ddfd",
+      "transactionHash": "0xef63deac3d96cc46f8eab962b4231374fa9be79b96ce0fc88d6f0c921a79c6ef"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2022-04-03T14:41:03.459Z",
+  "updatedAt": "2022-04-04T12:03:43.398Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
