@@ -17,4 +17,9 @@ contract('Lottery', ([ deployer, usr1, usr2 ]) => {
 		console.log(`value: ${value}`);
 		assert.equal(value, 5);
 	});
+
+	it('getPot should return current pot', async () => {
+		let pot = await lottery.getPot();
+		assert.equal(pot, 0);
+	});
 });
