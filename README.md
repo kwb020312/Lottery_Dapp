@@ -98,3 +98,16 @@ it 으로 jest와 같이 처리하여 asssert함수의 다양한 메서드를 �
 호출은 `truffle test (경로)` 로 할 수 있으며 실행 결과는 위와 같이 콘솔로 표시됨
 
 ![callTest](https://user-images.githubusercontent.com/46777310/161550242-b283de6b-2321-45ef-b63a-cfb67670aecc.png)
+
+> ### 함수의 반환
+
+```sol
+function popBet(uint256 index) public returns (bool) {
+    delete _bets[index];
+    return true;
+}
+```
+
+위와 같은 구조로 함수가 반환되며 그저 정해진 정적의 값을 변환할 때는
+
+`public pure returns` 를 사용하고 local변수를 사용할 때는 `public view returns` 를 사용한다.
